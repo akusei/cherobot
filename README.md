@@ -1,5 +1,5 @@
 # CHeroBot
-Clicker Hero Bot with UI front-end.
+Clicker Hero Bot with UI front-end. This Bot is in no way complete and does not account for all features in the game, it's very simple but does most of everything needed to advance the game through levels and upgrades.
 
 ## CHeroBot Project
 C# front-end using WPF and MVVM. The front-end loads the clickerbot.dll to control the Bot.
