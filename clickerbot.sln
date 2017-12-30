@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clickerbot", "clickerbot\clickerbot.vcxproj", "{430FAD03-56ED-4C6D-B353-31751F868377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHeroBot", "CHeroBot\CHeroBot.csproj", "{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{430FAD03-56ED-4C6D-B353-31751F868377} = {430FAD03-56ED-4C6D-B353-31751F868377}
+		{6CB58358-8266-4286-92DC-1A1E44254102} = {6CB58358-8266-4286-92DC-1A1E44254102}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "window-hook", "window-hook\window-hook.vcxproj", "{6CB58358-8266-4286-92DC-1A1E44254102}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Debug|x64.ActiveCfg = Debug|x64
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Debug|x64.Build.0 = Debug|x64
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Debug|x86.ActiveCfg = Debug|Win32
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Debug|x86.Build.0 = Debug|Win32
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Release|Any CPU.ActiveCfg = Release|Win32
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Release|x64.ActiveCfg = Release|x64
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Release|x64.Build.0 = Release|x64
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Release|x86.ActiveCfg = Release|Win32
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Release|x86.Build.0 = Release|Win32
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Debug|x64.Build.0 = Debug|Any CPU
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Debug|x86.Build.0 = Debug|Any CPU
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Release|x64.ActiveCfg = Release|Any CPU
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Release|x64.Build.0 = Release|Any CPU
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Release|x86.Build.0 = Release|Any CPU
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Debug|x64.ActiveCfg = Debug|x64
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Debug|x64.Build.0 = Debug|x64
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Debug|x86.ActiveCfg = Debug|Win32
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Debug|x86.Build.0 = Debug|Win32
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Release|x64.ActiveCfg = Release|x64
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Release|x64.Build.0 = Release|x64
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Release|x86.ActiveCfg = Release|Win32
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

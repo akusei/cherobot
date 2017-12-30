@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="CHeroBot.Views.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CHeroBot.Views"
+             xmlns:xtk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             mc:Ignorable="d" d:DataContext="{d:DesignInstance local:MainViewModel}"
+             d:DesignHeight="600" d:DesignWidth="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44" />
+            <RowDefinition Height="32" />
+            <RowDefinition Height="44" />
+            <RowDefinition Height="44" />
+            <RowDefinition Height="44" />
+            <RowDefinition Height="44" />
+            <RowDefinition Height="64" />
+            <RowDefinition Height="44" />
+            <RowDefinition Height="32" />
+            <RowDefinition Height="44" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="44" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="44" />
+        </Grid.ColumnDefinitions>
+
+        <CheckBox Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" IsChecked="{Binding LevelsEnabled}"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Levels Enabled" HorizontalAlignment="Left" FontSize="14pt" FontWeight="Bold" VerticalAlignment="Center" />
+        
+        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" Text="{Binding Path=Value, ElementName=SliderLvlDelay, StringFormat='Advance levels every {0} seconds'}" />
+        <Slider x:Name="SliderLvlDelay" Grid.Row="2" Grid.Column="1" Minimum="20" Maximum="600" Value="{Binding LevelDelay}" SmallChange="1" LargeChange="10" />
+
+        <TextBlock Grid.Row="3" Grid.Column="1" VerticalAlignment="Bottom" Text="{Binding Path=Value, ElementName=SliderOldBoss, StringFormat='Stay on old bosses for {0} seconds'}" />
+        <Slider x:Name="SliderOldBoss"  Grid.Row="4" Grid.Column="1" Minimum="20" Maximum="600" Value="{Binding OldBossDelay}" SmallChange="1" LargeChange="10" />
+
+        <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Bottom" Text="{Binding Path=Value, ElementName=SliderRollback, StringFormat='Rollback {0} levels when stuck on new boss'}" />
+        <Slider x:Name="SliderRollback" Grid.Row="6" Grid.Column="1" Minimum="2" Maximum="15" Value="{Binding RollbackLevels}" SmallChange="1" LargeChange="1" />
+
+        <CheckBox Grid.Row="7" Grid.Column="0" VerticalAlignment="Center" IsChecked="{Binding UpgradesEnabled}"/>
+        <TextBlock Grid.Row="7" Grid.Column="1" Text="Upgrades Enabled" HorizontalAlignment="Left" FontSize="14pt" FontWeight="Bold" VerticalAlignment="Center" />
+
+        <TextBlock Grid.Row="8" Grid.Column="1" VerticalAlignment="Bottom" Text="{Binding Path=Value, ElementName=SliderUpgrade, StringFormat='Perform upgrades every {0} seconds'}" />
+        <Slider x:Name="SliderUpgrade" Grid.Row="9" Grid.Column="1" Minimum="20" Maximum="600" Value="{Binding UpgradeDelay}" SmallChange="1" LargeChange="10" />
+
+        <Button Grid.Row="10" Grid.ColumnSpan="3" x:Name="CmdPause" Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}" BasedOn="{StaticResource {x:Type Button}}">
+                    <Style.Setters>
+                        <Setter Property="Content" Value="Pause" />
+                    </Style.Setters>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsPaused}" Value="True">
+                            <Setter Property="Content" Value="Resume" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+    </Grid>
+
+</UserControl>
