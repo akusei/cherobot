@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clickerbot", "clickerbot\clickerbot.vcxproj", "{430FAD03-56ED-4C6D-B353-31751F868377}"
 EndProject
@@ -24,11 +24,13 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{430FAD03-56ED-4C6D-B353-31751F868377}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Debug|Any CPU.Build.0 = Debug|Win32
 		{430FAD03-56ED-4C6D-B353-31751F868377}.Debug|x64.ActiveCfg = Debug|x64
 		{430FAD03-56ED-4C6D-B353-31751F868377}.Debug|x64.Build.0 = Debug|x64
 		{430FAD03-56ED-4C6D-B353-31751F868377}.Debug|x86.ActiveCfg = Debug|Win32
 		{430FAD03-56ED-4C6D-B353-31751F868377}.Debug|x86.Build.0 = Debug|Win32
 		{430FAD03-56ED-4C6D-B353-31751F868377}.Release|Any CPU.ActiveCfg = Release|Win32
+		{430FAD03-56ED-4C6D-B353-31751F868377}.Release|Any CPU.Build.0 = Release|Win32
 		{430FAD03-56ED-4C6D-B353-31751F868377}.Release|x64.ActiveCfg = Release|x64
 		{430FAD03-56ED-4C6D-B353-31751F868377}.Release|x64.Build.0 = Release|x64
 		{430FAD03-56ED-4C6D-B353-31751F868377}.Release|x86.ActiveCfg = Release|Win32
@@ -46,11 +48,13 @@ Global
 		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Release|x86.ActiveCfg = Release|Any CPU
 		{F37AB6F1-0240-4D1B-B77F-90B4672AC8A7}.Release|x86.Build.0 = Release|Any CPU
 		{6CB58358-8266-4286-92DC-1A1E44254102}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Debug|Any CPU.Build.0 = Debug|Win32
 		{6CB58358-8266-4286-92DC-1A1E44254102}.Debug|x64.ActiveCfg = Debug|x64
 		{6CB58358-8266-4286-92DC-1A1E44254102}.Debug|x64.Build.0 = Debug|x64
 		{6CB58358-8266-4286-92DC-1A1E44254102}.Debug|x86.ActiveCfg = Debug|Win32
 		{6CB58358-8266-4286-92DC-1A1E44254102}.Debug|x86.Build.0 = Debug|Win32
 		{6CB58358-8266-4286-92DC-1A1E44254102}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6CB58358-8266-4286-92DC-1A1E44254102}.Release|Any CPU.Build.0 = Release|Win32
 		{6CB58358-8266-4286-92DC-1A1E44254102}.Release|x64.ActiveCfg = Release|x64
 		{6CB58358-8266-4286-92DC-1A1E44254102}.Release|x64.Build.0 = Release|x64
 		{6CB58358-8266-4286-92DC-1A1E44254102}.Release|x86.ActiveCfg = Release|Win32
@@ -58,5 +62,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5199B56-0A1C-4A60-9E82-AFD9F2A9581A}
 	EndGlobalSection
 EndGlobal

@@ -42,7 +42,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "{#FilesDir}\Sounds\*"; DestDir: "{app}\Sounds"; Flags: ignoreversion;
-Source: "{#FilesDir}\*"; DestDir: "{app}"; Flags: ignoreversion; Excludes: "*.xml,*.pdb,debug.txt,*vshost*";
+Source: "{#FilesDir}\*"; DestDir: "{app}"; Flags: ignoreversion; Excludes: "*.xml,*.pdb,debug.txt,*vshost*,*.iobj,*.obj,*.exp,*.ipdb,*.lib";
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Check: IsAdminLoggedOn;
